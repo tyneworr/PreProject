@@ -32,7 +32,7 @@ public class UserDaoJDBCImpl implements UserDao {
 
             String sql = "DROP TABLE IF EXISTS users";
 
-            statement.execute(sql);
+            statement.executeUpdate(sql);
 
         } catch (SQLException e) {
             e.printStackTrace();
